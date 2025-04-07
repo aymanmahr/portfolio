@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Insights</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: monospace;
+      background-color: #0d0d0d;
+      color: #000000;
+      position: relative;
+    }
+
+    header {
+      position: relative;
+      z-index: 10;
+      background-color: rgba(13, 13, 13, 0.8);
+    }
+
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .video-background video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 6rem 2rem 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #ff4c4c;
+      margin-bottom: 2rem;
+    }
+
+    .insight-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 15px rgba(255, 76, 76, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .insight-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(255, 76, 76, 0.3);
+    }
+
+    .insight-title {
+      font-size: 1.5rem;
+      color: #00ffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .insight-text {
+      font-size: 1rem;
+      color: #000000;
+    }
+
+    footer {
+      padding: 2rem;
+      background-color: rgba(13, 13, 13, 0.9);
+      color: white;
+      text-align: center;
+    }
+
+    .glow-button {
+      background-color: #00ffff;
+      color: #000000;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 2rem;
+      text-decoration: none;
+      box-shadow: 0 0 10px #c4b8b8;
+      transition: all 0.3s ease;
+    }
+
+    .glow-button:hover {
+      box-shadow: 0 0 20px #fff5f5;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="3.png" alt="Logo" class="circular-logo"></a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+    <div class="logo">My Portfolio</div>
+  </header>
+
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="6.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="container">
+    <h2>💡 Insights</h2>
+
+    <div class="insight-card">
+      <div class="insight-title">🚀 Progress Over Perfection</div>
+      <div class="insight-text">Every project started messy. What matters is not a perfect start, but consistent growth. I embrace building, breaking, and fixing — it’s all part of the journey.</div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-title">🎮 Games Taught Me More Than Just Fun</div>
+      <div class="insight-text">Games taught me strategy, patience, and problem-solving. Whether it's a tough level or real life, I tackle things one challenge at a time.</div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-title">💻 Code is Just Logic + Creativity</div>
+      <div class="insight-text">I realized coding is not just about syntax, it’s like solving a puzzle with your imagination. That’s where the magic happens.</div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-title">📈 Business is About Value, Not Just Profit</div>
+      <div class="insight-text">I learned early that people don’t pay for products — they pay for the value you provide. That's what drives my entrepreneurial mindset.</div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-title">🧠 Curiosity Is My Superpower</div>
+      <div class="insight-text">The reason I started was a simple question: "How does this even work?" That spark still drives me every day to learn more.</div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-title">🤝 Surround Yourself With People Better Than You</div>
+      <div class="insight-text">Sports and tech communities taught me this — growth comes when you step out of your comfort zone and learn from the best around you.</div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-title">🔐 Tech Without Awareness is a Risk</div>
+      <div class="insight-text">In the digital world, staying informed is as important as staying connected. Cybersecurity isn't optional — it's a habit.</div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-title">✍️ Build. Share. Reflect.</div>
+      <div class="insight-text">Building projects is great, but sharing them teaches you more. Every time I explain something I made, I understand it even better.</div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-title">🌐 How I Got Into Web Development</div>
+      <div class="insight-text">A reflection on my journey learning HTML, CSS, and JavaScript.</div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-title">🛠️ Things I Learned Building This Portfolio</div>
+      <div class="insight-text">From flexbox to media queries — a lot goes into making a responsive site!</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="index.html#contact" class="glow-button">Get in Touch</a>
+      </div>
+      <div class="footer-right">
+        <ul class="footer-links">
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+        <p>&copy; 2025 Ayman. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

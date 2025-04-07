@@ -1,0 +1,189 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+  }
+
+.logo {
+  font-size: 1.5rem;
+}
+.nav-toggle {
+  display: none;
+}
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.nav-toggle-label span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin-bottom: 5px;
+  border-radius: 2px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;}
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 2rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+      
+      .footer-contact {
+        flex: 1;
+        min-width: 250px;
+        margin-bottom: 1rem;
+        text-align: left;
+      }
+      
+      .footer-right {
+        flex: 1;
+        min-width: 250px;
+        text-align: right;
+      }
+      
+      .footer-links {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0.5rem;
+      }
+      
+      .footer-links li {
+        margin-bottom: 0.5rem;
+      }
+      
+      .footer-links a {
+        color: #00bcd4;
+        text-decoration: none;
+      }
+      
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+      
+      footer {
+        background: #050505;
+        color: white;
+        margin-top: auto;
+        padding: 2rem 1rem;
+      }
+      
+      footer a {
+        color: #00bcd4;
+        text-decoration: none;
+      }
+      
+      footer a:hover {
+        text-decoration: underline;
+      }
+      
+      footer .social-icons a {
+        color: white;
+        margin-right: 10px;
+        font-size: 1.5rem;
+        transition: color 0.3s;
+      }
+      
+      footer .social-icons a:hover {
+        color: #00bcd4;
+      }
+      
+      @media (max-width: 768px) {
+        .footer-container {
+          flex-direction: column;
+          text-align: center;
+        }
+      
+        .footer-contact, .footer-right {
+          text-align: center;
+          margin-top: 1rem;
+        }
+      }
+      .glow-button {
+        display: inline-block;
+        padding: 0.6rem 1.2rem;
+        color: white;
+        background-color: #000000;
+        text-decoration: none;
+        font-weight: bold;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 0 10px #00bcd4;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .glow-button:hover {
+        background-color: #04d2d2;
+        box-shadow: 0 0 20px #00bcd4, 0 }
+
+        .circular-logo {
+            width: 35px; /* Set your desired size */
+            height: 35px; /* Same as width for a perfect circle */
+            border-radius: 50%; /* This makes it circular */
+            object-fit: cover; /* Ensures the image fills the circle without distorting */
+            object-fit: cover;
+            opacity: 0.85; /* adjust for transparency */
+            border: 1px solid #00e1ff;
+          }
+          #index {
+            font-family: 'Nova Mono', monospace;
+            text-align: center;
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto;
+            color: #fff; /* or #000 if you're using a light background */
+          }
+          
+          #index p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: center;
+          } 
+          .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            overflow: hidden;
+          }
+          
+          .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
