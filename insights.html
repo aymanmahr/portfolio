@@ -21,7 +21,8 @@
     }
 
     header {
-      position: relative;
+      position: sticky; /* Added for PC */
+      top: 0;
       z-index: 10;
       background-color: rgba(13, 13, 13, 0.8);
     }
@@ -103,6 +104,93 @@
     .glow-button:hover {
       box-shadow: 0 0 20px #fff5f5;
       transform: scale(1.05);
+    }
+
+    /* Mobile optimization styles (max-width: 768px) */
+    @media (max-width: 768px) {
+      header {
+        position: sticky;
+        top: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+      }
+
+      .logo {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 1rem 0;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+      }
+
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+
+      .nav-toggle:checked ~ nav ul {
+        display: flex; /* Show menu when checkbox is checked */
+      }
+
+      .nav-toggle-label {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 20;
+        font-size: 1.5em;
+        cursor: pointer;
+      }
+
+      .nav-toggle-label span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: #00ffff;
+        position: relative;
+      }
+
+      .nav-toggle-label span::before,
+      .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background: #00ffff;
+        transition: all 0.3s ease;
+      }
+
+      .nav-toggle-label span::before {
+        top: -8px;
+      }
+
+      .nav-toggle-label span::after {
+        top: 8px;
+      }
+
+      .nav-toggle:checked + .nav-toggle-label span {
+        background: transparent;
+      }
+
+      .nav-toggle:checked + .nav-toggle-label span::before {
+        transform: rotate(45deg);
+        top: 0;
+      }
+
+      .nav-toggle:checked + .nav-toggle-label span::after {
+        transform: rotate(-45deg);
+        top: 0;
+      }
     }
   </style>
 </head>
@@ -193,7 +281,7 @@
         <ul class="footer-links">
           <li><a href="about.html">About Me</a></li>
         </ul>
-        <p>&copy; 2025 Ayman. All rights reserved.</p>
+        <p>© 2025 Ayman. All rights reserved.</p>
       </div>
     </div>
   </footer>
